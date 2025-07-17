@@ -1,6 +1,6 @@
 import '../styles/EducationInfo.css'
 
-export default function EducationInfo({educationInfo,setEducationInfo,isEditingEducation,setIsEditingEducation}){
+export default function EducationInfo({educationInfo,setEducationInfo,isEditingEducation,setIsEditingEducation,isPreviewMode}){
 
 
     function handleChange(e){
@@ -13,6 +13,15 @@ export default function EducationInfo({educationInfo,setEducationInfo,isEditingE
         <div className='education-info'>
             <h2>Education Info</h2>
             {
+                (isPreviewMode)?(
+
+                    <div className='education-info-preview'>
+                    <p> <strong>School Name:</strong>{educationInfo.schoolName}</p>
+                    <p> <strong>Title Of Study:</strong>{educationInfo.titleOfStudy}</p>
+                    <p> <strong>Date Of Study</strong>{educationInfo.dateOfStudy}</p>
+                   </div>
+                ):
+
                 (isEditingEducation)?(
                     <div className='education-info-content'>
                         <label        htmlFor='school-name'          >School Name</label>
@@ -28,9 +37,9 @@ export default function EducationInfo({educationInfo,setEducationInfo,isEditingE
                 ):
                 (
                    <div className='education-info-preview'>
-                    <p> <strong>SchoolName:</strong>{educationInfo.schoolName}</p>
-                    <p> <strong>TitleOfStudy:</strong>{educationInfo.titleOfStudy}</p>
-                    <p> <strong>DateOfStudy</strong>{educationInfo.dateOfStudy}</p>
+                    <p> <strong>School Name:</strong>{educationInfo.schoolName}</p>
+                    <p> <strong>Title Of Study:</strong>{educationInfo.titleOfStudy}</p>
+                    <p> <strong>Date Of Study</strong>{educationInfo.dateOfStudy}</p>
                     <button  onClick={()=>setIsEditingEducation(true)}>Edit</button>
                    </div>
                 )

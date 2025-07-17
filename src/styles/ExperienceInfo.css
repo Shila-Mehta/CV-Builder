@@ -9,14 +9,12 @@
 .experience-info h2{
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color:#333;
 }
 
 .experience-info-content label{
     display: block;
     margin-top: 1rem;
     font-weight: bold;
-    color:#444;
 
 }
 
@@ -65,6 +63,6 @@
 .experience-info-preview p{
     margin: 0.8rem 0;
     font-size: 1.1rem;
-     color: #222;
+     
 }
 

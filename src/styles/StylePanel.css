@@ -1,0 +1,43 @@
+.style-panel{
+justify-self: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+ width:350px;
+ max-height: 550px;
+ background-color: #fff;
+ border-radius: 10px;
+}
+
+
+.style-panel>*{
+    display: flex;
+    border-bottom: 1px solid grey;
+    gap:20px;
+    width:100%;
+    padding:1rem;
+}
+
+
+
+ .toggle-preview-btn  , .print-btn{
+    background: linear-gradient(135deg,rgb(70, 53, 226),rgb(66, 128, 223),rgb(116, 108, 233));
+    padding:0.5rem 1.3rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color:white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+
+}
+
+.toggle-preview-btn:hover,.print-btn:hover{
+  background: rgb(105, 152, 214);
+}
+
+
+

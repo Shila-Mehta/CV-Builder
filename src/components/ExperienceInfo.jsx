@@ -1,7 +1,7 @@
 import '../styles/ExperienceInfo.css';
 
 
-export default function ExperienceInfo({experienceInfo,setExperienceInfo,isEditingExperience,setIsEditingExperience}){
+export default function ExperienceInfo({experienceInfo,setExperienceInfo,isEditingExperience,setIsEditingExperience,isPreviewMode}){
 
     
      function handleChange(e){
@@ -14,6 +14,16 @@ export default function ExperienceInfo({experienceInfo,setExperienceInfo,isEditi
         <div className='experience-info'>
             <h2>Experience Info</h2>
             {
+                (isPreviewMode)?(
+                    <div className='experience-info-preview'>
+                    <p> <strong>Company Name:</strong>{experienceInfo.companyName}</p>
+                    <p> <strong>Position Title:</strong>{experienceInfo.positionTitle}</p>
+                    <p> <strong>Responsiblities:</strong>{experienceInfo.responsibilities}</p>
+                    <p> <strong>Date From:</strong>{experienceInfo.dateFrom}</p>
+                    <p> <strong>Date Until:</strong>{experienceInfo.dateUntil}</p>
+                   </div>
+                ):
+
                 (isEditingExperience)?(
                     <div className='experience-info-content'>
                         <label        htmlFor='company-name'          >Company Name</label>

@@ -1,0 +1,81 @@
+input, textarea, select ,label{
+  color: inherit;
+}
+
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  min-height:100vh;
+}
+
+
+@media (max-width:768px){
+.main{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.sidebar{
+  flex-direction: row;
+  width:100%;
+  gap:0.5rem;
+  background-color: transparent;
+}
+
+.sidebar>*{
+  flex: 1;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.navbar-right .hide{
+  display: none;
+}
+
+.style-panel{
+    width:90%;
+    padding: 1rem;
+    background: #f9f9f9;
+    gap:1rem;
+
+   
+}
+
+.style-panel >*{
+   border-bottom: 1px solid #ccc;
+   width:100%;
+   justify-content: space-between;
+}
+
+
+
+}
+
+
+@media print {
+  /* Hide buttons and form inputs */
+   .navbar,
+   .sidebar,
+   .style-panel,
+  .general-info-content,
+  .education-info-content,
+  .experience-info-content,
+  button {
+    display: none !important;
+  }
+
+  
+  body {
+    background: white;
+    margin: 0;
+    padding: 1cm;
+  }
+
+
+   * {
+    color: black !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+}

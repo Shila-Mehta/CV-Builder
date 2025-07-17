@@ -10,7 +10,7 @@
 .general-info h2{
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color:#333;
+    
 }
 
 
@@ -18,7 +18,7 @@
     display: block;
     margin-top: 1rem;
     font-weight: bold;
-    color:#444;
+   
 }
 
 .general-info-content input{
@@ -54,5 +54,5 @@
 .general-info-preview p{
     margin: 0.8rem 0;
     font-size: 1.1rem;
-    color:#222;
+    
 }

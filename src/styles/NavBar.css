@@ -1,0 +1,91 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(79, 89, 179);
+    color:white;
+    padding: 1rem;
+}
+
+.cv-box-icon{
+    width:100px;
+    height:100px;
+}
+
+.dropdown-icon{
+    width:10px;
+    height: 10px;
+    cursor: pointer;
+
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.navbar-right p {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.navbar-right p img{
+    width:20px;
+    height:20px;
+}
+
+.profile-img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border:1px solid gold;
+}
+
+.language-dropdown-wrapper,.profile-dropdown-wrapper{
+    position: relative;
+}
+
+
+.dropdown{
+    position: absolute;
+    min-width:100px;
+    min-height:100px;
+    border:1px solid grey;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    margin-top: 0.3rem;
+    background-color: #fff;
+    color:rgb(63, 62, 62);
+    padding:0 1rem;
+    text-align: center;
+    right:10px;
+ 
+}
+
+.dropdown >*{
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-icon.rotated{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.languages-dropdown p {
+  display: flex;
+  align-items: center;
+   gap:1rem;
+}
+.languages-dropdown p img{
+   width:20px;
+   height:20px;
+}
+
+
+
+
